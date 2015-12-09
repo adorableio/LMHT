@@ -10,7 +10,7 @@ Welcome to [LMHT].  This is an open source code repository for a website that he
 
 The [LMHT site] provides a list of current HTML tags. Select the tag you are looking for or begin typing it in the search box. Once selected, an embedded window will appear, containing the English base of the tag, the Spanish equivalent, a definition in both English and Spanish, as well as audio recordings of each of these items.  Furthermore, there are helpful hints on how to remember what the tag does as well as examples of the code being used.
 
-[LMHT page]:  http://lmht.github.io/
+[LMHT site]:  http://lmht.github.io/
 
 ## Known Issues
 
