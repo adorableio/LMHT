@@ -19,7 +19,6 @@ var app = {
   },
 
   getSection: function(url) {
-
     $.ajax({
 
       url: "elements/" + url
@@ -50,15 +49,16 @@ var app = {
   },
 
   updateURL: function(url) {
-    window.location.hash = url;
+    // window.location.hash = url;
+    var stateObj = { foo: "bar" };
+    history.pushState(stateObj, url, url);
   },
 
   // This function controls what element will show based on the URL the page loads with.
   setUpFirstView: function() {
 
-    // Look for hash
-    var hash = window.location.hash;
-    var url = hash.replace("#", "");
+    var path = window.location.pathname;
+    var url = path.replace("/", "");
 
     // If there is one...
     if (url) {
