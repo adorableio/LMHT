@@ -163,41 +163,6 @@ strong {
   font-weight: 700;
 }
 
-button {
-  border: none;
-  cursor: pointer;
-  outline: none;
-  position: relative;
-}
-
-button.play-button {
-  background: url('/button/play.png') no-repeat;
-  width: 2em;
-  height: 1.8em;
-  background-size: 20px 20px;
-  margin-left: 3px;
-}
-
-button.play-button.pause {
-  background: url('/button/pause.png') no-repeat;
-  background-size: 20px 20px;
-}
-
-.book-icon{
-  z-index: 100;
-  margin-left: 370px;
-  padding-bottom:  20px;
-  position: absolute;
-  width: 25px;
-}
-
-.mind-icon{
-  z-index: 100;
-  margin-left: 370px;
-  position: absolute;
-  height: 28px;
-}
-
 .definition-box code,
 .how-to-remember-box code {
   color: #333;
@@ -245,6 +210,43 @@ h4 {
   margin: -1rem -1rem 0.5rem -1rem;
   padding: 0.5rem 1rem;
 }
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+button.play-button {
+  background: url('/button/play.png') no-repeat;
+  width: 2em;
+  height: 1.8em;
+  background-size: 20px 20px;
+  margin-left: 3px;
+}
+
+button.play-button.pause {
+  background: url('/button/pause.png') no-repeat;
+  background-size: 20px 20px;
+}
+
+.book-icon{
+  z-index: 100;
+  margin-left: 260px;
+  position: absolute;
+  width: 35px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.mind-icon{
+  z-index: 100;
+  margin-left: 370px;
+  position: absolute;
+  height: 28px;
+}
+
 
 .code-example {
   background: #2c3e50;
