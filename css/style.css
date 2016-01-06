@@ -233,18 +233,19 @@ button.play-button.pause {
 
 .book-icon{
   z-index: 100;
-  margin-left: 260px;
+  margin-left: 255px;
   position: absolute;
-  width: 35px;
   height: 30px;
-  margin-bottom: 10px;
+  width: 40px;
+
 }
 
 .mind-icon{
   z-index: 100;
-  margin-left: 370px;
+  margin-left: 220px;
   position: absolute;
-  height: 28px;
+  height: 30px;
+  width: 40px;
 }
 
 
