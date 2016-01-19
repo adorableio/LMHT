@@ -269,20 +269,6 @@ h4 {
   -ms-flex-pack: justify;
 }
 
-.book-icon img{
-  height: 60px;
-  width: 60px;
-}
-.book-icon {
-  background-color: white;
-  height: 60px;
-  width: 60px;
-  margin-left: -50px;
-  position: relative;
-
-}
-
-
 button {
   border: none;
   cursor: pointer;
@@ -301,6 +287,34 @@ button.play-button {
 button.play-button.pause {
   background: url('/button/pause.png') no-repeat;
   background-size: 20px 20px;
+}
+
+.book-icon img{
+  height: 100px;
+  width: 100px;
+}
+
+.book-icon {
+  z-index: 300px;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  margin-bottom: -78px;
+  margin-left: 400px
+}
+
+.mind-icon img{
+  height: 100px;
+  width: 100px;
+}
+
+.mind-icon {
+  z-index: 300px;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  margin-bottom: -80px;
+  margin-left: 400px
 }
 
 .code-example {
