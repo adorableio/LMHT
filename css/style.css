@@ -13,6 +13,17 @@ body {
 }
 
 @media all and (max-width: 1140px) {
+  .horizontal-ribbon {
+    height: 6em;
+  }
+
+.horizontal-ribbon {
+  width: 50%;
+  height: 50px;
+  background-color: yellow;
+}
+
+@media all and (max-width: 1140px) {
   .bookmark {
     height: 0;
     visibility: hidden;
