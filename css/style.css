@@ -289,6 +289,11 @@ h4 {
   justify-content: space-between;
 }
 
+.header-center {
+  justify-content: center;
+  flex-direction: row;
+}
+
 .spanish-def {
   background: orange;
 }
