@@ -210,18 +210,6 @@ select {
   margin: 0 0 3rem 0;
 }
 
-.article-header {
-  padding: 1rem;
-}
-
-.article-header audio {
-  float: right;
-}
-
-.tag {
-  float: right;
-}
-
 h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -283,45 +271,43 @@ button.play-button.pause {
   font-weight: bold;
 }
 
-.english-section,
-.spanish-section,
-.how-to-contribute {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-}
-
-.spanish-def,
-.spanish-how-to,
-.english-def,
-.english-how-to,
-.how-to-contribute-box {
-  border: 1px solid black;
-  padding: 4rem;
-  width: calc(40% - 0.1rem);
-}
-
-.english-def h4,
-.english-how-to h4,
-.spanish-def h4,
-.spanish-how-to h4,
-.how-to-contribute-box h4,
-.site-footer h4 {
-  color: black;
-  font-weight: 700;
-  margin: -1rem -1rem 0.5rem -1rem;
-  padding: 0.5rem 1rem;
-}
-
 h4 {
   font-size: 1em;
   padding: 1em;
+  color: black;
+  font-weight: 700;
+}
+
+.spanish-container {
+  border: 3px solid green;
+}
+
+.spanish-header {
+  background: pink;
+}
+
+.spanish-def {
+  background: orange;
+}
+
+.spanish-how-to {
+  background: yellow;
+}
+
+.english-container {
+  border: 3px solid red;
+}
+
+.english-header {
+  background: purple;
+}
+
+.english-def {
+  background: violet;
+}
+
+.english-how-to {
+  background: teal;
 }
 
 .code-example {
