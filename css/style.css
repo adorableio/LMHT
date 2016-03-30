@@ -231,6 +231,18 @@ strong {
   font-weight: 700;
 }
 
+.ES-icon {
+  background: url('/img/ES-icon.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+}
+
+.EN-icon {
+  background: url('/img/EN-icon.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+}
+
 button {
   border: none;
   cursor: pointer;
@@ -239,16 +251,27 @@ button {
 }
 
 button.play-button {
-  background: url('/button/play.png') no-repeat;
-  background-size: 20px 20px;
-  height: 1.8em;
-  margin-left: 3px;
-  width: 2em;
+  background: url('/img/speaker.svg') no-repeat;
+  height: 40px;
+  width: 40px;
 }
 
 button.play-button.pause {
-  background: url('/button/pause.png') no-repeat;
-  background-size: 20px 20px;
+  background: url('/img/speaker.svg') no-repeat;
+  height: 40px;
+  width: 40px;
+}
+
+.book-icon {
+  background: url('/img/book.svg') no-repeat;
+  height: 40px;
+  width: 40px;
+}
+
+.mind-icon {
+  background: url('/img/mind.svg') no-repeat;
+  height: 40px;
+  width: 40px;
 }
 
 .spanish-def code,
