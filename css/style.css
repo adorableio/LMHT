@@ -284,6 +284,9 @@ h4 {
 
 .spanish-header {
   background: pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .spanish-def {
