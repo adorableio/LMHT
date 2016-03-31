@@ -8,33 +8,60 @@ var app = {
   },
 
   setUpMenu: function() {
-    $('#tags').change(function() {
-      var $selected = $(this);
-      var url = $selected.val();
+    $('#tags').on('input', function (event) {
+      clearTimeout(app.debounce)
 
-      app.getSection(url);
-    });
+      if (event.which === 13) {
+        app.handleInput(event);
+
+      } else {
+        app.debounce = setTimeout(function () {
+          app.handleInput(event)
+        }, 500)
+      }
+    })
+  },
+
+  handleInput: function (event) {
+    var target = event.target;
+    var value = target.value;
+
+    $('#tags-list option').each(function () {
+      var tag = this.innerHTML.replace(/<|>/g, '');
+
+      if (tag === value) {
+        // Empty the input
+        target.value = '';
+
+        // Deselect the input
+        target.blur()
+
+        // Update the page
+        app.getSection(tag);
+      }
+    })
   },
 
   getSection: function(url) {
-
     url = url.replace('#', '');
 
     $.ajax({
-
       url: 'elements/' + url + '.html'
-
     }).success(function(html) {
-
+      var $main = $('#main');
       // Replace the card with the new content and fade it back in.
-      $('#main')
-        .html(html)
+      $main
         .animate({
-          opacity: 1
-        }, 500);
+          opacity: 0
+        }, 500, function () {
+          $main
+          .html(html)
+          .animate({
+            opacity: 1
+          }, 500);
+        })
 
       app.updateURL(url);
-
       app.scrollToContent(url);
     });
 
