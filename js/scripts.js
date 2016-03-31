@@ -8,8 +8,6 @@ var app = {
   },
 
   setUpMenu: function() {
-    $('#tags').combobox();
-
     $('#tags').change(function() {
       var $selected = $(this);
       var url = $selected.val();
@@ -36,7 +34,6 @@ var app = {
         }, 500);
 
       app.updateURL(url);
-      $('.custom-combobox-input').val('');
 
       app.scrollToContent(url);
     });
