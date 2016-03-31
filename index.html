@@ -9,7 +9,6 @@
   <script src='js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.js'></script>
   <script type="text/javascript" src="js/stickynav.js"></script>
   <script type="text/javascript" src="js/button.js"></script>
-  <script src='js/combobox.js'></script>
   <script src='js/scripts.js'></script>
 </head>
 <body>
@@ -32,32 +31,31 @@
       <p>Ayudando a los Hispanohablantes a Aprender Terminolog&iacute;a de Desarollo Web</p>
     </div>
   </header>
-    <div class="ui-widget">
-    <nav>
-      <select id="tags" placeholder="Search/Buscar">
-        <option value='a'>&lt;a&gt;</option>
-        <option value='base'>&lt;base&gt;</option>
-        <option value='body'>&lt;body&gt;</option>
-        <option value='br'>&lt;br&gt;</option>
-        <option value='em'>&lt;em&gt;</option>
-        <option value='div'>&lt;div&gt;</option>
-        <option value='footer'>&lt;footer&gt;</option>
-        <option value='h1-h6'>&lt;h1-h6&gt;</option>
-        <option value='head'>&lt;head&gt;</option>
-        <option value='header'>&lt;header&gt;</option>
-        <option value='html'>&lt;html&gt;</option>
-        <option value='li'>&lt;li&gt;</option>
-        <option value='link'>&lt;link&gt;</option>
-        <option value='meta'>&lt;meta&gt;</option>
-        <option value='ol'>&lt;ol&gt;</option>
-        <option value='p'>&lt;p&gt;</option>
-        <option value='strong'>&lt;strong&gt;</option>
-        <option value='style'>&lt;style&gt;</option>
-        <option value='title'>&lt;title&gt;</option>
-        <option value='ul'>&lt;ul&gt;</option>
-      </select>
-    </nav>
-  </div>
+  <span class="input-wrapper">
+    <input list="tags-list" id="tags" placeholder="Search/Buscar">
+  </span>
+  <datalist id="tags-list">
+    <option>a</option>
+    <option>base</option>
+    <option>body</option>
+    <option>br</option>
+    <option>em</option>
+    <option>div</option>
+    <option>footer</option>
+    <option>h1-h6</option>
+    <option>head</option>
+    <option>header</option>
+    <option>html</option>
+    <option>li</option>
+    <option>link</option>
+    <option>meta</option>
+    <option>ol</option>
+    <option>p</option>
+    <option>strong</option>
+    <option>style</option>
+    <option>title</option>
+    <option>ul</option>
+  </datalist>
   <main>
     <div class="wrapper">
     </div>
@@ -81,5 +79,4 @@
       </ul>
     </div>
   </footer>
-</body>
-</html>
+</bod/html>

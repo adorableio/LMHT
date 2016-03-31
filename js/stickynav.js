@@ -1,7 +1,7 @@
 $(document).ready(function() {
-
   // define variables
-  var navOffset, scrollPos = 0;
+  var navOffset,
+  scrollPos = 0;
 
   // add utility wrapper elements for positioning
   $('nav').wrap('<div class=\'sticky-combo\'></div>');
@@ -10,15 +10,13 @@ $(document).ready(function() {
 
   // function to run on page load and window resize
   function stickyUtility() {
-
     // only update navOffset if it is not currently using fixed position
     if (!$('nav').hasClass('fixed')) {
-      navOffset = $('nav').offset().top;
+      // navOffset = $('nav').offset().top;
     }
 
     // apply matching height to nav wrapper div to avoid awkward content jumps
     $('.sticky-combo').height($('nav').outerHeight());
-
   } // end stickyUtility function
 
   // run on page load
@@ -31,7 +29,6 @@ $(document).ready(function() {
 
   // run on scroll event
   $(window).scroll(function() {
-
     scrollPos = $(window).scrollTop();
 
     if (scrollPos >= navOffset) {
@@ -41,7 +38,5 @@ $(document).ready(function() {
       $('nav').removeClass('fixed sticky-nav-color');
       $('.ui-menu').removeClass('fixed-dropdown').css({'top': '355px'});
     }
-
   });
-
 });

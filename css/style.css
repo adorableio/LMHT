@@ -145,45 +145,45 @@ nav.sticky-nav-color {
   }
 }
 
-select {
-  width: 300px;
-}
-
-.custom-combobox::before {
+.input-wrapper:before {
   background: url("/img/search-icon.svg") no-repeat 0 0;
   background-size: 100%;
   content: "";
   display: inline-block;
   height: 40px;
-  margin-top: 16px;
-  margin-left: 18px;
-  position: absolute;
   width: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.custom-combobox {
-  align-items: stretch;
+.input-wrapper {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 700px;
-}
-
-.custom-combobox-toggle,
-.custom-combobox-input {
-  border: 0;
-  box-shadow: inset 0 0 0 1px rgb(211, 211, 211);
-}
-
-.custom-combobox-toggle {
-  margin: 0;
-  top: inherit;
-  width: 50px;
-}
-
-.custom-combobox-input {
   flex-grow: 10;
-  padding: 1em 4em 1em;
+  height: 60px;
+  border-radius: 3px;
+  background-color: white;
+  align-content: stretch;
+}
+
+#tags {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  align-self: stretch;
+  flex-grow: 1;
+  outline: none;
+  font-size: 18px;
+}
+
+#tags::-webkit-calendar-picker-indicator {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  opacity: 1;
 }
 
 .wrapper {
@@ -321,14 +321,6 @@ h4 {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.45;
-}
-
-.ui-menu {
-  z-index: 500;
-}
-
-.fixed-dropdown {
-  position: fixed;
 }
 
 .fixed {
