@@ -276,17 +276,55 @@ h4 {
   flex-direction: row;
 }
 
-.spanish-def { background: orange; }
+.spanish-def {
+background: orange;
+display: flex;
+flex-wrap: wrap;
+padding: 30px;
+}
 
-.spanish-how-to { background: yellow; }
+.spanish-how-to {
+background: yellow;
+display: flex;
+flex-wrap: wrap;
+padding: 30px;
+}
 
+.spanish-def-how-to {
+  background-color: green;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-around;
+}
 .english-container { border: 3px solid red; }
 
-.english-header { background: purple; }
+.english-def-how-to {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-around;
+}
 
-.english-def { background: violet; }
+.english-header {
+  background: purple;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
 
-.english-how-to { background: teal; }
+.english-def {
+  background: violet;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.english-how-to {
+  background: teal;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
 
 .code-example {
   background: #2c3e50;
