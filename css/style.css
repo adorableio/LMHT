@@ -262,7 +262,13 @@ h4 {
   padding: 1em;
 }
 
-.spanish-container { border: 3px solid green; }
+.ES-icon {
+  margin-left: 10px;
+}
+
+.tag {
+  margin-right: 20px;
+}
 
 .spanish-header {
   align-items: flex-start;
@@ -277,26 +283,29 @@ h4 {
 }
 
 .spanish-def {
-background: orange;
+background: white;
 display: flex;
 flex-wrap: wrap;
-padding: 30px;
+padding: 50px;
 }
 
 .spanish-how-to {
-background: yellow;
+background: white;
 display: flex;
 flex-wrap: wrap;
-padding: 30px;
+padding: 50px;
 }
 
 .spanish-def-how-to {
-  background-color: green;
+  background-color: white;
   display: flex;
   justify-content: flex-start;
   justify-content: space-around;
 }
-.english-container { border: 3px solid red; }
+
+.EN-icon {
+  margin-left: 10px;
+}
 
 .english-def-how-to {
   display: flex;
@@ -305,7 +314,7 @@ padding: 30px;
 }
 
 .english-header {
-  background: purple;
+  background: white;
   align-items: flex-start;
   display: flex;
   justify-content: space-between;
@@ -313,17 +322,17 @@ padding: 30px;
 }
 
 .english-def {
-  background: violet;
+  background: white;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 50px;
 }
 
 .english-how-to {
-  background: teal;
+  background: white;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 50px;
 }
 
 .code-example {
