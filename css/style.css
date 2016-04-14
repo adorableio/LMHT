@@ -205,12 +205,14 @@ strong { font-weight: 700; }
   background: url('/img/ES-icon.svg') no-repeat;
   height: 60px;
   width: 60px;
+  margin-left: 20px;
 }
 
 .EN-icon {
   background: url('/img/EN-icon.svg') no-repeat;
   height: 60px;
   width: 60px;
+  margin-left:  20px;
 }
 
 button {
@@ -262,16 +264,8 @@ h4 {
   padding: 1em;
 }
 
-.ES-icon {
-  margin-left: 10px;
-}
-
-.tag {
-  margin-right: 20px;
-}
-
 .spanish-header {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -285,6 +279,8 @@ h4 {
 .spanish-def {
 background: white;
 display: flex;
+justify-content: space-around;
+justify-content: flex-start;
 flex-wrap: wrap;
 padding: 50px;
 }
@@ -297,32 +293,36 @@ padding: 50px;
 }
 
 .spanish-def-how-to {
-  background-color: white;
   display: flex;
   justify-content: flex-start;
   justify-content: space-around;
+  padding: 40px;
 }
 
-.EN-icon {
-  margin-left: 10px;
+.tag {
+  margin-right: 30px;
+}
+
+.tag2 {
+  margin-right: 30px;
+  color: transparent;
 }
 
 .english-def-how-to {
   display: flex;
   justify-content: flex-start;
   justify-content: space-around;
+  padding: 40px;
 }
 
 .english-header {
-  background: white;
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 10px;
 }
 
 .english-def {
-  background: white;
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
@@ -333,6 +333,10 @@ padding: 50px;
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
+}
+
+.divider {
+  color: black;
 }
 
 .code-example {
