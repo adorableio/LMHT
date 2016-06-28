@@ -31,47 +31,22 @@ body {
   }
 
   .horizontal-ribbon {
-    background-color: yellow;
-    color: black;
-    display: none;
-    flex-grow: 1;
-    font-family: Helvetica, Arial, Sans-Serif;
-    font-size: 13px;
-    font-weight: 900;
-    height: 75px;
-    margin: 20px auto;
-    padding-top: 10px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 -1px 0 0;
-    width: 15%;
-  }
-
-  .horizontal-ribbon:before {
-    border-bottom: 38px solid yellow;
-    border-left: 30px solid transparent;
-    border-top: 37.5px solid yellow;
-    content: '';
-    height: 0;
-    left: -30px;
-    position: absolute;
-    top: 0;
-    width: 10px;
+    visibility: hidden;
   }
 
   .horizontal-lmht {
     background-image: url(/img/lmht-logo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    display: none;
+    background-position: top center;
     flex-grow: 1;
-    height: 2.5em;
+    flex-wrap: wrap;
+    height: 3.5em;
     margin: 1rem;
-    width: calc(50% - 2rem);
+    width: 100%;
   }
 
-  .sticky-nav-color .horizontal-ribbon, .sticky-nav-color .horizontal-lmht {
+  .sticky-nav-color .sticky-nav-color .horizontal-lmht {
     display: block;
   }
 }
