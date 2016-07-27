@@ -349,3 +349,12 @@ h4 {
   top: 0;
   width: 100%;
 }
+
+@media print {
+  .article {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
