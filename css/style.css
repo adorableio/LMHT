@@ -15,8 +15,14 @@ body {
 
 @media all and (max-width: 1140px) {
   .bookmark {
-    height: 0;
-    visibility: hidden;
+    width: 50%;
+    height: 50px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   nav.sticky-nav-color {
